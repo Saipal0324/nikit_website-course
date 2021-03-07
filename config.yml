@@ -1,0 +1,16 @@
+title: Nikit_Website
+description: My GitHub Website
+template:
+  repo: nikit_website-template
+  name: nikit_website
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
